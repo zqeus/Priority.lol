@@ -1,334 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Loading</title>
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-  </head>
-  <body style="background-color:black">
-    <article class="article">
-      <div class="main">
-      </div>
-    </article>
-    <script type="text/javascript">
-      jQuery(document).ready(() => {
-        $('div.main').append('<div class="submain"></div>')
-        var div = document.getElementsByClassName('submain')[0]
-        div.style.width = '350px'
-        div.style.height = div.style.width
-        div.style.border = '1px solid transparent'
-        div.style.margin = '150px auto 30px auto'
-        div.style['border-radius'] = '50%'
-        div.style['border-right-color'] = 'rgb(0, 255, 193)'
-        div.style['border-left-color'] = 'rgb(0, 255, 248)'
-        $('div.main').append('<div class="loading">Loading</div>')
-        var loading = document.getElementsByClassName('loading')[0]
-        loading.style.position = 'absolute'
-        loading.style.color = 'rgb(15, 15, 15)'
-        loading.style.textShadow = '0 0 50px rgb(30, 30, 30)'
-        loading.style.top = '230px'
-        loading.style.left = '400px'
-        loading.style.zIndex = -1
-        loading.style.textAlign = 'center'
-        loading.style.fontSize = '144px'
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Liquid Loader</title>
+</head>
+<body>
+    <section>
+        <svg>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                <feColorMatrix values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 20 -10
+                "></feColorMatrix>
+            </filter>
+        </svg>
 
-        $('div.submain').append('<div class="div1"></div>')
-        var div1 = document.getElementsByClassName('div1')[0]
-        div1.style.width = '300px'
-        div1.style.height = div1.style.width
-        div1.style.border = '1px solid transparent'
-        div1.style.margin = '24px auto 24px auto'
-        div1.style['border-radius'] = '50%'
-        div1.style['border-top-color'] = 'rgb(100, 150, 255)'
-        div1.style['border-bottom-color'] = 'rgb(62, 111, 213)'
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span class="rotate" style="--j:0;"></span>
+            <span class="rotate" style="--j:1;"></span>
+            <span class="rotate" style="--j:2;"></span>
+            <span class="rotate" style="--j:3;"></span>
+            <span class="rotate" style="--j:4;"></span>
 
-        $('div.div1').append('<div class="div2"></div>')
-        var div2 = document.getElementsByClassName('div2')[0]
-        div2.style.width = '280px'
-        div2.style.height = div2.style.width
-        div2.style.border = '2px solid transparent'
-        div2.style.margin = '8px auto 8px auto'
-        div2.style['border-radius'] = '50%'
-        div2.style['border-color'] = 'rgb(153, 0, 255)'
-        div2.style['border-style'] = 'dashed'
+        </div>
+    </section>                
 
-        $('div.div2').append('<div class="div3"></div>')
-        var div3 = document.getElementsByClassName('div3')[0]
-        div3.style.width = '250px'
-        div3.style.height = div3.style.width
-        div3.style.border = '1.5px solid transparent'
-        div3.style.margin = '13.5px auto 13.5px auto'
-        div3.style['border-radius'] = '50%'
-        div3.style['border-top-color'] = 'rgb(255, 100, 100)'
-        div3.style['border-right-color'] = 'rgb(253, 139, 6)'
 
-        $('div.div3').append('<div class="div4"></div>')
-        var div4 = document.getElementsByClassName('div4')[0]
-        div4.style.width = '230px'
-        div4.style.height = div4.style.width
-        div4.style.border = '4px solid transparent'
-        div4.style.margin = '6px auto 6px auto'
-        div4.style['border-radius'] = '50%'
-        div4.style['border-top-color'] = 'rgb(255, 148, 0)'
-        div4.style['border-bottom-color'] = 'rgb(255, 216, 0)'
-
-        $('div.div4').append('<div class="div5"></div>')
-        var div5 = document.getElementsByClassName('div5')[0]
-        div5.style.width = '210px'
-        div5.style.height = div5.style.width
-        div5.style.border = '1.5px solid transparent'
-        div5.style.margin = '8.5px auto 8.5px auto'
-        div5.style['border-radius'] = '50%'
-        div5.style['border-bottom-color'] = 'rgb(0, 135, 255)'
-        div5.style['border-left-color'] = 'rgb(51, 113, 232)'
-
-        $('div.div5').append('<div class="div6"></div>')
-        var div6 = document.getElementsByClassName('div6')[0]
-        div6.style.width = '170px'
-        div6.style.height = div6.style.width
-        div6.style.border = '1.5px solid transparent'
-        div6.style.margin = '18.5px auto 18.5px auto'
-        div6.style['border-radius'] = '50%'
-        div6.style['border-bottom-color'] = 'rgb(191, 255, 0)'
-
-        $('div.div6').append('<div class="div7"></div>')
-        var div7 = document.getElementsByClassName('div7')[0]
-        div7.style.width = '160px'
-        div7.style.height = div7.style.width
-        div7.style.border = '1.5px solid transparent'
-        div7.style.margin = '3.5px auto 3.5px auto'
-        div7.style['border-radius'] = '50%'
-        div7.style['border-top-color'] = 'rgb(0, 255, 145)'
-
-        $('div.div7').append('<div class="div8"></div>')
-        var div8 = document.getElementsByClassName('div8')[0]
-        div8.style.width = '150px'
-        div8.style.height = div8.style.width
-        div8.style.border = '1.5px solid transparent'
-        div8.style.margin = '3.5px auto 3.5px auto'
-        div8.style['border-radius'] = '50%'
-        div8.style['border-right-color'] = 'rgb(255, 0, 226)'
-
-        $('div.div8').append('<div class="div9"></div>')
-        var div9 = document.getElementsByClassName('div9')[0]
-        div9.style.width = '140px'
-        div9.style.height = div9.style.width
-        div9.style.border = '1.5px solid transparent'
-        div9.style.margin = '3.5px auto 3.5px auto'
-        div9.style['border-radius'] = '50%'
-        div9.style['border-right-color'] = 'rgb(191, 0, 255)'
-
-        $('div.div9').append('<div class="div10"></div>')
-        var div10 = document.getElementsByClassName('div10')[0]
-        div10.style.width = '110px'
-        div10.style.height = div10.style.width
-        div10.style.border = '3px solid transparent'
-        div10.style.margin = '12px auto 12px auto'
-        div10.style['border-radius'] = '50%'
-        div10.style['border-color'] = 'rgb(254, 20, 137)'
-        div10.style['border-style'] = 'dashed'
-
-        $('div.div10').append('<div class="div11"></div>')
-        var div11 = document.getElementsByClassName('div11')[0]
-        div11.style.width = '10px'
-        div11.style.height = div11.style.width
-        div11.style.border = '3px solid red'
-        div11.style['border-radius'] = '50%'
-        div11.style.position = 'absolute'
-        div11.style.top = '25px'
-        div11.style.left = '25px'
-        $('div.div10').append('<div class="div12"></div>')
-        var div12 = document.getElementsByClassName('div12')[0]
-        div12.style.width = '10px'
-        div12.style.height = div12.style.width
-        div12.style.border = '3px solid rgb(245, 0, 112)'
-        div12.style['border-radius'] = '50%'
-        div12.style.position = 'absolute'
-        div12.style.top = '25px'
-        div12.style.right = '25px'
-        $('div.div10').append('<div class="div13"></div>')
-        var div13 = document.getElementsByClassName('div13')[0]
-        div13.style.width = '10px'
-        div13.style.height = div13.style.width
-        div13.style.border = '3px solid rgb(255, 29, 242)'
-        div13.style['border-radius'] = '50%'
-        div13.style.position = 'absolute'
-        div13.style.right = '25px'
-        div13.style.bottom = '25px'
-        $('div.div10').append('<div class="div14"></div>')
-        var div14 = document.getElementsByClassName('div14')[0]
-        div14.style.width = '10px'
-        div14.style.height = div14.style.width
-        div14.style.border = '3px solid rgb(255, 103, 0)'
-        div14.style['border-radius'] = '50%'
-        div14.style.position = 'absolute'
-        div14.style.left = '25px'
-        div14.style.bottom = '25px'
-      })
-    </script>
-    <style media="screen">
-      body {
-        text-align: center;
-        display: block;
-        overflow: hidden;
-      }
-
-      .submain {
-        animation-name: rotating;
-        animation-iteration-count: infinite;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-      }
-
-      .loading {
-        font-family: sans-serif;
-      }
-
-      .div1 {
-        animation-name: rotating;
-        animation-direction: reverse;
-        animation-iteration-count: infinite;
-        animation-duration: 7s;
-        animation-timing-function: linear;
-      }
-
-      .div2 {
-        animation-name: rotating;
-        animation-iteration-count: infinite;
-        animation-duration: 8s;
-        animation-timing-function: linear;
-      }
-
-      .div3 {
-        animation-name: rotating;
-        animation-direction: reverse;
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-      }
-
-      .div4, .div6 {
-        animation-name: rotating;
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-      }
-
-      .div5 {
-        animation-name: rotating;
-        animation-iteration-count: infinite;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-direction: reverse;
-      }
-
-      .div7 {
-        animation-name: rotating;
-        animation-iteration-count: infinite;
-        animation-duration: 1.5s;
-        animation-timing-function: linear;
-        animation-direction: reverse;
-      }
-
-      .div8 {
-        animation-name: rotating;
-        animation-iteration-count: infinite;
-        animation-duration: 4s;
-        animation-timing-function: linear;
-        animation-direction: reverse;
-      }
-
-      .div9 {
-        animation-name: rotating;
-        animation-iteration-count: infinite;
-        animation-duration: 4s;
-        animation-timing-function: linear;
-      }
-
-      .div10 {
-        animation-name: rotating;
-        animation-iteration-count: infinite;
-        animation-duration: 0.8s;
-        animation-timing-function: linear;
-      }
-
-      @keyframes rotating {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      .div11 {
-        animation-name: div11;
-        animation-iteration-count: infinite;
-        animation-duration: 3s;
-      }
-
-      .div12 {
-        animation-name: div12;
-        animation-iteration-count: infinite;
-        animation-duration: 3s;
-      }
-
-      .div13 {
-        animation-name: div13;
-        animation-iteration-count: infinite;
-        animation-duration: 3s;
-      }
-
-      .div14 {
-        animation-name: div14;
-        animation-iteration-count: infinite;
-        animation-duration: 3s;
-      }
-
-      @keyframes div11 {
-        from {
-          transform: translateX(0px)
-        }
-        25%, 75% {
-          transform: translateX(300px) scale(2)
-        }
-        to {
-          transform: translateX(0px)
-        }
-      }
-      @keyframes div12 {
-        from {
-          transform: translateY(0px)
-        }
-        25%, 75% {
-          transform: translateY(300px) scale(2)
-        }
-        to {
-          transform: translateY(0px)
-        }
-      }
-      @keyframes div13 {
-        from {
-          transform: translateX(0px)
-        }
-        25%, 75% {
-          transform: translateX(-300px) scale(2)
-        }
-        to {
-          transform: translateX(0px)
-        }
-      }
-      @keyframes div14 {
-        from {
-          transform: translateY(0px)
-        }
-        25%, 75% {
-          transform: translateY(-300px) scale(2)
-        }
-        to {
-          transform: translateY(0px)
-        }
-      }
-    </style>
-  </body>
+</body>
 </html>
