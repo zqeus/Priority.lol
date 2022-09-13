@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Priority</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<style type="text/css">
-	@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-	*{
-		margin: 0;
-		padding: 0;
-		font-family: 'Russo One', sans-serif;
-	}
-	html{
+   <head>
+      <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Priority</title>
+            <style type="text/css">
+               * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+               }
+               body {
+                  height: 100vh;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: rgb(11, 13, 26);
+               }
+               .container {
+                  display: flex;
+               }
+               .container span{
+                  width: 60px;
+                  height: 60px;
+                  margin: 0 15px;
+                  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+                  transform: scale(.1);
+                  border-radius: 0%;
+                  animation: 1s animate infinite;
+                  border-radius: 50%;
+               }
+
+               @keyframes animate {
+                  50% {
+                     transform:  scale(1);
+                     border-radius: 50%;
+                  }
+               }
+
+               span:nth-child(1){
+                  background: #f4fa9c;
+                  animation-delay: .8s;
+               }
+
+               span:nth-child(2){
+                  background: #f469a9;
+                  animation-delay: 1.6s;
+               }
+
+               span:nth-child(3){
+                  background: #88bef5;
+                  animation-delay: 2.4s;
+               }
+
+            </style>
+   </head>
+   <body>
+      <div class="container">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+   </body>
+</html>
+html{
 		font-size: 70%;
 	}
 	.main_div{
