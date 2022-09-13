@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Liquid Loader</title>
-</head>
-<body>
-    <section>
-        <svg>
-            <filter id="gooey">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
-                <feColorMatrix values="
-                    1 0 0 0 0
-                    0 1 0 0 0
-                    0 0 1 0 0
-                    0 0 0 20 -10
-                "></feColorMatrix>
-            </filter>
-        </svg>
-
-        <div class="loader">
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-            <span style="--i:4;"></span>
-            <span style="--i:5;"></span>
-            <span style="--i:6;"></span>
-            <span style="--i:7;"></span>
-            <span style="--i:8;"></span>
-            <span class="rotate" style="--j:0;"></span>
-            <span class="rotate" style="--j:1;"></span>
-            <span class="rotate" style="--j:2;"></span>
-            <span class="rotate" style="--j:3;"></span>
-            <span class="rotate" style="--j:4;"></span>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form Redirection to Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="form" method="post">
+        <h2>Login Here</h2>
+        <div class="form-elements">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter username"
+            required
+          />
         </div>
-    </section>                
 
+        <div class="form-elements">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+            required
+          />
+        </div>
 
-</body>
+        <button type="submit" onclick="loginValidation()">Login</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
