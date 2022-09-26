@@ -1,60 +1,83 @@
-*
-{
-margin: 0;
-padding: 0;
-font-family: consolas;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
-section
-{
-position: relative;
-width: 100%;
-height: 100vh;
-overflow: hidden;
-background: #111;
-display: flex;
-justify-content: center;
-align-items: center;
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-5deg,  #000000,  #111111, #222222,#333333);
 }
-section h2
-{
-font-size: 10em;
-color: #333;
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://media.discordapp.net/attachments/889967763316166727/900166363946025030/3d.png?width=498&height=498);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    color: #8c8c8c;
+    padding: 0 8%;
+    
 }
-section span
-{
-position: absolute;
-bottom: 50px;
-background: transparent;
-border-radius: 50%;
 
-pointer-events: none;
-box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
-animation: animate 4s linear infinite;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-section span:before
-{
-content: '';
-position: absolute;
-width: 100%;
-height: 100%;
-transform: scale(0.25) translate(-70%,-70%);
-background: radial-gradient(#fff.transparent);
-border-radius: 50%;
+.logo{
+    width: 160px;
 }
-@keyframes animate
-{
-0%
-{
-transform: translateY(0%);
-opcaity: 1;
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
 }
-99%
-{
-opacity: 1;
+nav ul li a{
+    color: #8c8c8c;
+    text-decoration: none;
 }
-100%
-{
-transform: translateY(-1200%);
-opacity: 0;
-  }
+.hero h1{
+    font-size: 75px;
+    margin-top: 12%;
+}
+.hero button{
+    background: #8c8c8c;
+    border: 0;
+    outline: none;
+    padding: 15px 35px;
+    color: white;
+    margin-top: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.test1 button{
+    background: #8c8c8c;
+    border: 0;
+    outline: none;
+    padding: 15px 35px;
+    color: white;
+    margin-top: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.indicator span{
+   display: inline-block;
+   background: #3a3a3a;
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   margin-right: 10px;
+}
+.indicator{
+    margin-top: 150px;
+
+}
+.indicator span.active{
+    background: #bfbfbf;
+
 }
