@@ -1,48 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>particles.js</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Vincent Garreau" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    *
+    {
+      margin: 0px
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    }
+    #particles-js
+    {
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("favicon.ico");
+      
+    }
+    
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 80px;
+      color: white;
+    }
+  </style>
 </head>
 <body>
+  <div id="particles-js">
+    <h1>PARTICLES.JS</h1>
+  </div>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+    <section>
+<div class="hero">
+    <nav>
+        <img src="logo.png" alt="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://sellix.io/username">Shop</a></li>
+            <li><a href="status.html">Status</a></li>
+            <li><a href="https://discord.gg/invitehere">Discord</a></li>
+        </ul>
+    </nav>
+    <h1>Cloud,<br>do be loud</h1>
+    <form action="https://sellix.io/username">
+    <button type="submit"><a href="https://sellix.io/username"></a> Shop Now </button>
+    </form>
 
-<!-- count particles -->
-<div class="count-particles">
-  <span class="js-count-particles">--</span> particles
+    <div class="indicator">
+        <span></span>
+        <span></span>
+        <span class="active"></span>
+    </div>
 </div>
-
-<!-- particles.js container -->
-<div id="particles-js"></div>
-
-<!-- scripts -->
-<script src="../particles.js"></script>
-<script src="js/app.js"></script>
-
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
+</section>
 
 </body>
 </html>
