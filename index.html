@@ -1,38 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Priority</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="img/favicon/ico" type="favicon/ico" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section>
+<div class="hero">
+    <nav>
+        <img src="favicon.ico" alt="favicon">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://sellix.io/username">Shop</a></li>
+            <li><a href="status.html">Status</a></li>
+            <li><a href="https://discord.gg/invitehere">Discord</a></li>
+        </ul>
+    </nav>
+    <h1>Cloud,<br>do be loud</h1>
+    <form action="https://sellix.io/mipsy">
+    <button type="submit"><a href="https://sellix.io/mipsy"></a> Shop Now </button>
+    </form>
 
-	<section>
-		<h2>Priority.lol</h2>
-	</section>
+    <div class="indicator">
+        <span></span>
+        <span></span>
+        <span class="active"></span>
+    </div>
+</div>
+</section>
 
-	<script type="text/javascript">
-		function createBubble(){
-	const section = document.querySelector('section')
-	const createElement = document.createElement('span')
-	var size = Math.random() * 60;
-
-	createElement.style.width = 20 + size + 'px';
-	createElement.style.height = 20 + size + 'px';
-	createElement.style.left = Math.random() * innerWidth + "px";
-	section.appendChild(createElement);
-
-	setTimeout(() => {
-		createElement.remove()
-	},4000)
-}
-	
-
-	setInterval(createBubble,50)
-</script>
 </body>
 </html>
