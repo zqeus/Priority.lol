@@ -95,6 +95,26 @@ box-shadow: inset 0px 0px 0px 0px #F0F0F0;
     
     <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(0, 0, 0);"></div>
     <div class="container">
+	    
+	<script type="text/javascript">
+		function createBubble(){
+	const section = document.querySelector('section')
+	const createElement = document.createElement('span')
+	var size = Math.random() * 60;
+
+	createElement.style.width = 20 + size + 'px';
+	createElement.style.height = 20 + size + 'px';
+	createElement.style.left = Math.random() * innerWidth + "px";
+	section.appendChild(createElement);
+
+	setTimeout(() => {
+		createElement.remove()
+	},4000)
+}
+	
+
+	setInterval(createBubble,50)
+</script>
         <div class="row align-left justify-content-center align-content-around">
             <div class="col-12 col-lg col-md-12 md-pb">
                 <div class="text-wrapper">
@@ -124,35 +144,26 @@ box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 					 <span class="card-title mbr-black m-0 mbr-fonts-style display-4"><b>&nbsp; OFFLINE</b>        &nbsp;&nbsp;&nbsp;</span>
             </div>
         </div>
-        <div class="row justify-content-center">                                                                                                    
-               <div class="online">
-                  <b>Rainbow Six Siege</b>
-                  <div style="float: right;"><a href="" target="_blank" rel="noopener"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase</a></div>
-               </div>
-               <div class="updating">
-                  <b>Apex Legends</b>
-                  <div style="float: right;"><a href="" target="_blank" rel="noopener"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase</a></div>
-               </div>
-               <div class="online">
-                  <b>Hunt: Showdown</b>
-                  <div style="float: right;"><a href="" target="_blank" rel="noopener"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase</a></div>
-               </div>
-               <div class="online">
-                  <b>Halo Infinite</b>
-                  <div style="float: right;"><a href="" target="_blank" rel="noopener"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase</a></div>
-               </div>
-               <div class="online">
-                  <b>Chess</b>
-                  <div style="float: right;"><a href="" target="_blank" rel="noopener"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase</a></div>
-               </div>
-               <div class="online">
-                 <b>HWID Spoofer - EAC</b>
-                  <div style="float: right;"><a href="" target="_blank" rel="noopener"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase</a></div>
-               </div>
-               <div class="online">
-                  <b>HWID Spoofer - BE</b>
-                  <div style="float: right;"><a href="" target="_blank" rel="noopener"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase</a></div>
-               </div>
+       
+	<script type="text/javascript">
+		function createBubble(){
+	const section = document.querySelector('section')
+	const createElement = document.createElement('span')
+	var size = Math.random() * 60;
+
+	createElement.style.width = 20 + size + 'px';
+	createElement.style.height = 20 + size + 'px';
+	createElement.style.left = Math.random() * innerWidth + "px";
+	section.appendChild(createElement);
+
+	setTimeout(() => {
+		createElement.remove()
+	},4000)
+}
+	
+
+	setInterval(createBubble,50)
+</script>
 <style>
    .offline {
         border:2px; 
@@ -263,10 +274,7 @@ box-shadow: inset 0px 0px 0px 0px #F0F0F0;
     </div>
 </section>
 
-	
-	<section>
-		<h2>Priority.lol</h2>
-	</section>
+
 
 	
 
