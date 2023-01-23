@@ -1,27 +1,42 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>soju_</title>
-<meta charset="utf-8">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://priority.lol/">
-<meta property="og:title" content="Swaggin & Baggin">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://priority.lol">
-<meta property="twitter:title" content="Priority">
-<meta property="twitter:description" content="">
-<meta property="twitter:image" content="">
-<link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skleton Loading</title>
 </head>
 <body>
-<div id="text">
-<h1>Priority.lol</h1>
-<h2>Coming Never</h2>
-<p>Secure | Private | High</p>
-<a href='Discord Soon'>Discord Soon</a>
-</div>
+    <div class="container">
+        <div class="box">
+            <div class="image">
+                <img class="img skeleton" src="https://source.unsplash.com/WLUHO9A_xik/1600x900">
+            </div>
+            <div class="title skeleton-text">
+                <strong>Lorem ipsum dolor sit amet.</strong> 
+            </div>
+        </div>
+        <div class="content">
+            <div class="line skeleton-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</div>
+            <div class="line skeleton-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</div>
+            <div class="line skeleton-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</div>
+            <div class="line skeleton-text">Lorem ipsum dolor sit amet consectetur</div>
+        </div>
+    </div>
 </body>
+<script>
+    
+  
+    function skeleton(){
+        var line = document.querySelectorAll(".line")
+        for(let i = 0;i < line.length;i++){
+            line[i].classList.remove('skeleton-text')
+        }
+        var text = document.querySelector(".title")
+        text.classList.remove('skeleton-text')
+    }
+    setTimeout(skeleton,3000)
+
+</script>
 </html>
