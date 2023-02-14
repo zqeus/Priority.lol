@@ -1,9 +1,9 @@
 let db = `
-https://discord.gg/CmAHcpe9Rk
+https://discord.gg/9XQMuGvY96
 --
-BoBeeBeatz.jpg
+JOKER BLUE.jpg
 --
-ttvleeroy
+𝓕𝓡𝓞𝓢𝓣𝓨🕊
 `;
 
 export {db} 
