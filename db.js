@@ -3,7 +3,7 @@ https://discord.gg/9XQMuGvY96
 --
 JOKER BLUE.jpg
 --
-Priority.lol
+Priority.lol (Support)
 `;
 
 export {db} 
