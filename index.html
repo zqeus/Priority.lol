@@ -1,39 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priority.LOL</title>
-    <link rel="shortcut icon" href="JOKER BLUE.jpg" type="jpg">
-
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <link rel="mask-icon" href="favicon.ico" color="#798fca">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="favicon/ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+    <meta name="theme-color" content="#333333">
+    <script src="darkmodestuff.js"></script>
+    <script src="https://kit.fontawesome.com/96cf917497.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-    <div class="guilds_div" id="guilds">
-        <a href="#/" class="back" id="back">×</a>
-        <h3 class="guilds_title">Discord Servers</h3>
-        <div class="paintings"></div>
+<body id="body" class="dark-mode">
+    <!-- add a video as a background-->
+    <div id="bgvid">
+        <video autoplay muted playsinline loop src="assets/bgvid.mp4">
+        <!-- <video autoplay muted playsinline loop src="assets/4.mp4"> -->
     </div>
+    <div class="ohraniceni noselect">
+        <div class="img-area">
+            <div class="inner-area">
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLXnrgzN7gN7iiRp7Q3OHM1MDXyB7FawvWvpPA3xJ_uQ_qz_yJ_dacZEwKihctHdxYSflXNsehtyL7B4KYpeEQUHez_SE97LFxMCjnaB53HF07m8IxTgFmW2F-kUXSrCxFl12O5lSB4wKVahN9n5ba8O=s937-no?authuser=0" alt="">
+            </div>
+        </div>
+        <div class="name">𝓕𝓡𝓞𝓢𝓣𝓨🕊#2948</div>
+        <div class="about">C++ Is Life</div>
+        <div class="wrapper">
+            <div class="button">
+                <a target="_blank" href="https://www.youtube.com/c/frostyovh" class="alink">
+                    <div class="icon"><i class="fab fa-youtube"></i></div>
+                    <span>frostyovh</span>
+                </a>
+            </div>
 
-    <form action="" class="profile" id="profile">
-        <i class='bx bxs-moon'></i>
-        <img src="3.gif" class="nitro" alt="">
-        <img src="2.png" class="nitro" alt="">
-        <img src="1.png" class="nitro" alt="">
-        <img src="JOKER BLUE.jpg" alt="">
-        <h3>𝓕𝓡𝓞𝓢𝓣𝓨🕊#2948</h3>
-        <a href="https://www.snapchat.com/add/obn.connor" target="_blank"><i class='bx bxl-snapchat'></i></a>
-        <a href="https://discordapp.com/users/927359607842701382/" target="_blank"><i class='bx bxl-discord-alt' ></i></a>
-        <a href="https://twitch.tv/nzxae" target="_blank"><i class='bx bxl-twitch' ></i></a>
-
-        <a href="#/" class="btn" id="guildsButton">Discord Servers</a>
-    </form>
-
-    <script src="script.js"></script>
-    <script type="module" src="posts.js"></script>
+            <div class="button">
+                <a target="_blank" href="https://www.instagram.com/frostyovh" class="alink">
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                    <span>Instagram</span>
+                </a>
+            </div>
+            <div class="button">
+                <a target="_blank" href="https://discord.gg/bmVUZPqqBS" class="alink">
+                    <div class="icon"><i class="fab fa-discord"></i></div>
+                    <span>Discord</span>
+                </a>
+            </div>
+            <div class="button">
+                <a target="_blank" href="https://www.twitch.tv/nzxqae" class="alink">
+                    <div class="icon"><i class="fab fa-twitch"></i></div>
+                    <span>Twitch</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <span class=about>Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" checked onchange="toggleDarkLight()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
 </body>
+
 </html>
