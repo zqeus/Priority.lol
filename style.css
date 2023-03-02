@@ -3,8 +3,9 @@
 :root {
   /*  Colors  */
   --youtube: #ff0000;
-  --youtube2: #ff0000;
+  --youtube2: #f6e907;
   --instagram: #e1306c;
+  --snapchat: #f6e907;
   --instagram_gradient: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
