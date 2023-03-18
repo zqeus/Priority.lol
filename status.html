@@ -112,7 +112,25 @@
 	    <h2>Status</h2>
       <span class="intro-wow-left"><img class="filter-ddd" src="ark.svg"><br><span>Ark Windows 10🟠</span></span>
       <span class="intro-wow-right"><img class="filter-ddd" src="ark.svg"><br><span>Ark Steam/Epic🟢</span></span>
-
+      <script>
+        {
+          const p = document.currentScript.parentElement.children[0];
+          const q = "Status Page";
+          let s = "";
+          let i = 0;
+          let k = 0;
+          (function loop() {
+            if (i < q.length) {
+              s += q[i++];
+            }
+            else return;
+            
+            p.innerHTML = " " + ( k++ % 2 < 1 ? s + "✰" : s + " ");
+            
+            setTimeout(loop, 100);
+          })();
+        }
+      </script>
     </section>
      
   </main>
