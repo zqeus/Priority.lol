@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
@@ -23,524 +24,102 @@
       viewport.setAttribute("content", "width=" + window.innerWidth + ", height=" + window.innerHeight + ", initial-scale=1.0, maximum-scale=1.0");
     });
   </script>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
-	<style>
-		html{
-			overflow-x: hidden;
-		}
-	input[type=text], select, option{
-		line-height: 1.2;
-		color: white;
-		background: #282828;
-		border: 0;
-		border-radius: 2px;
-		display: inline-block;
-		-webkit-font-smoothing: antialiased;
-		outline: none;
-		padding: 7px 5px;
-		width: 200px;
-	}
-
-	input[type=text]::placeholder{
-		color: rgb(167, 167, 167);
-	}
-	input[type=submit]{
-		line-height: 1.2;
-		color: white;
-		background: #282828;
-		border: 0;
-		border-radius: 2px;
-		display: inline-block;
-		-webkit-font-smoothing: antialiased;
-		outline: none;
-		padding: 7px 5px;
-	}
-	input, select, option{
-		font-size: 100%;
-	}
-	input[type=submit]:hover{
-		color: white;
-		background: #3d3d3d;
-		text-decoration: none;
-	}
-	.center {
-	  text-align: center;
-	}
-    .admin-text{
-        color: red;
-        font-weight: bold;
-    }
-	.doxbin-text{
-		text-align:center;
-		background-color: inherit;
-		line-height:15px;
-		border: none;
-		color: white;
-		padding-bottom:0;
-		margin-bottom:0;
-	}
-	.hoa-title{
-		margin: 5px 0 0 0;
-		letter-spacing: 2px;
-	}
-	.hoa-container{
-		border: solid 1px rgb(40, 40, 40);
-		background-color: rgb(14, 14, 14);
-		width: 32%;
-		border-radius: 2px;
-		float: left;
-		margin: 10px 5px 10px 5px;
-		position: relative;
-		padding: 15px;
-		-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-		height: 460px;
-	}
-	.hoa-container:hover{
-		border: solid 1px rgb(44, 44, 44);
-		background-color: rgb(18, 18, 18);
-	}
-	.hoa-container .hoa-image{
-		text-align: center;
-		max-height: 215px;
-		border-bottom: solid 1px rgb(40, 40, 40);
-	}
-	.hoa-container .hoa-image img{
-		width: 100%;
-		height: 200px;
-		max-width: 200px;
-		max-height: 200px;
-		margin-bottom: 15px;
-	}
-	.hoa-container .hoa-name{
-		padding-top: 10px;
-		text-align: center;
-		color: white;
-		font-size: 20px;
-		font-weight: bold;
-	}
-	.hoa-container .hoa-description{
-		margin-top: 5px;
-		text-align: center;
-		color: rgb(200,200,200);
-		word-wrap: break-word;
-		overflow-y: auto;
-		height: 160px;
-	}
-	@media  only screen and (max-width: 991px) {
-		.hoa-container{
-			width: 48%;
-		}
-	}
-	@media  only screen and (max-width: 575px) {
-		.hoa-container{
-			width: 100%;
-		}
-	}
-	@media  only screen and (max-width: 271px) {
-		.doxbin-text{
-			font-size: 9px;
-			line-height: 10px;
-		}
-		.hoa-title{
-			font-size: 16px;
-			letter-spacing: 2px;
-		}
-	}
-	::-webkit-scrollbar { /*scroll bar*/
-		width: 7px;
-	}
-	
-	/* Track */
-	::-webkit-scrollbar-track {
-		background: #cacaca; 
-	}
-	
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-		background: rgb(110, 110, 110); 
-	}
-	
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		background: rgb(68, 68, 68); 
-	}
-	
-	.rainbow {  
-	   /* Font options */
-	  text-shadow: 2px 2px 4px #000000;
-	  
-	   /* Chrome, Safari, Opera */
-	  -webkit-animation: rainbow 5s infinite; 
-	  
-	  /* Internet Explorer */
-	  -ms-animation: rainbow 5s infinite;
-	  
-	  /* Standar Syntax */
-	  animation: rainbow 5s infinite; 
-	}
-
-	/* Chrome, Safari, Opera */
-	@-webkit-keyframes rainbow{
-	  	0%{color: red;}	
-		17%{color: orange;}
-		33%{color: yellow;}
-		50%{color: green;}
-		67%{color: blue;}
-		84%{color: purple;}
-	 	100%{color: red;}
-	}
-
-	/* Internet Explorer */
-	@-ms-keyframes rainbow{
-	  	0%{color: red;}	
-		17%{color: orange;}
-		33%{color: yellow;}
-		50%{color: green;}
-		67%{color: blue;}
-		84%{color: purple;}
-	 	100%{color: red;}
-	}
-
-	/* Standar Syntax */
-	@keyframes  rainbow{
-	  	0%{color: red;}	
-		17%{color: orange;}
-		33%{color: yellow;}
-		50%{color: green;}
-		67%{color: blue;}
-		84%{color: purple;}
-	 	100%{color: red;}
-	}
-	</style>
-
 </head>
 
-<body>
-	<iframe src="clown.mp3" allow="autoplay" style="display:none"></iframe>
-<input type="hidden" name="_token" value="EXgSakIPF66YhXJLcyUOTL3zxEXfanJ4D1g64nVO">
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://doxbin.org/">Doxbin</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li ><a href="https://doxbin.org">Home</a></li>
-                <li><a href="https://doxbin.org/upload">Add Paste</a></li>
-                <li ><a href="https://doxbin.org/users">Users</a></li>
-                <li ><a href="https://doxbin.org/upgrade">Upgrades<p class="notif_count" style="display: none;margin-top: 4px; left:65px;height: 8px;top:8px;"></p></a></li>
-                <li class="active"><a href="https://doxbin.org/hoa">Hall of Autism</a></li>
-                <li ><a href="https://doxbin.org/tos">TOS</a></li>
-                <li><a target="_blank" rel="nofollow" href="https://t.me/doxbin">Telegram</a></li>
-                            </ul>
-            <div class="sidebar-right">
-                                    <ul class="nav navbar-nav">
-                        <li ><a href="/login">Login</a></li>
-                        <li ><a href="/register">Register</a></li>
-                    </ul>
-                            </div>
-        </div>
-    </div>
-</nav>
-	<div class="col-md-12" style="margin-top: 60px;">
-		<div class="center">
-			<pre class="doxbin-text">
- ____            _     _       
-|  _ \  _____  _| |__ (_)_ __  
-| | | |/ _ \ \/ / '_ \| | '_ \ 
-| |_| | (_) &gt;  &lt;| |_) | | | | |
-|____/ \___/_/\_\_.__/|_|_| |_|</pre>
-			<h4 class="hoa-title rainbow"><b>HALL OF AUTISM</b></h4>
-		</div>
-		<div class="container" style="margin-top:20px;">
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/rabbit/rabbit.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					pacho#0001
-				</div>
-				<div class="hoa-description">
-					<b>Retarded Fortnite Com Kid</b><br>
-					14 Year Old kid who claims to be making 30k from selling his "UD" fortnite cheats<br>
-					pacho got flashcarded many times by other members of the community telling them to wait while he searches it up<br>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/meow/face.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					Meowbahh
-				</div>
-				<div class="hoa-description">
-					<b>Jenna Leigh Hutcheson</b><br>
-					18 year old 'PNGTuber' who forces children to go on all-fours and act like a cat while being on camera for an unban on Discord.com.<br>
-					From being bullied in school, to being cyber bullied on the internet.<br>
-					Often tells people to kill themselves due to her lack of self-respect and confidence.<br>
-					Uses her fanbase as an army of nebbishes to harass people who go against her.<br>
-					<a href="https://doxbin.net/upload/MeowbahhPNGTuberonTikTokFullDox" target="_blank">Dox</a>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/white/arion.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					White / Breachbase
-				</div>
-				<div class="hoa-description">
-					<b>Arion Kurtaj</b><br>
-16 year old Albanian immigrant who loves fishing with his uncle Simon.<br>
-From begging people to hack Minecraft servers to having a 14MIL net worth.<br>
-Getting scammed over 600k total (Should've used MM).<br>
-Begged kt to stop texting his friends and family.<br>
-Folded, cried & ran at the first sight of someone @ his crib.<br>
-<a href="/upload/white">Dox</a>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/mourn/larry.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					Mourn / Locket
-				</div>
-				<div class="hoa-description">
-					<b>Larry Howard Washington Jr (21)</b><br>
-Starting his efamous career by Discord packing other like-minded fatherless apes on YouTube.<br>
-Mourn turned to professional child groomer, manipulator and extorter to satisfy his pedophilia and lust for dominating a child.<br>
-Manipulated a 15 year old girl by cutting himself so she would edate him, along with convincing everyone he got a tattoo of her name on his forearm.<br>
-Has been exposed multiple times for using his efame to entice children for child abuse material, a total of 30+ underage girls.<br>
-<a href="https://doxbin.org/upload/Mourn" target="_blank">Dox</a> | <a href="https://kiwifarms.net/threads/discord-packing-community-mourn-underpants22-void-thizzkid.102340/" taget="_blank">KiwiFarms</a><br>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/pabble/hayden.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					Pabble
-				</div>
-				<div class="hoa-description">
-					<b>Hayden Philip Livingstone</b><br>
-					A humongous faggot carrying triple chins weighing down his jawline with over $1500 worth of food hiding under his neck folds.<br>
-					Currently feasting on a Triple XL BigMac Combo covered in sugar.<br>
-					Holding over $10,000 of counterfeit cash, yet going around roxbot claiming a 7 figure net-worth.<br>
-					Disowned by his friends & family for eating the last Twinkie.<br>
-					<a href="/upload/PabblePabbyHaydenDox">Dox</a>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/sleep/sl33py.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					SleepTheGod / igfilmsv2
-				</div>
-				<div class="hoa-description">
-					<b>Taylor Christian Newsome</b><br>
-					The 28 year old meth-snorting, roleplay hacker from the 2013+ XBOX scene.<br> 
-					From being a prominent name in the skid-hacking community, to becoming the white 'BeetleJuice' with meth teeth.<br>
-					Name-dropping people he doesn't know to act more important than he actually is.<br>
-					Flexes public JS/CSS files and thinks he hacked/rooted a website, yet only knows how to use automatic pentesting tools.<br>
-					<a href="/upload/SleepTheGod">Dox</a> | <a href="https://www.youtube.com/watch?v=DXK-rUloMa8">Meme</a>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/bab/underpants22.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					Underpants22 / Bab
-				</div>
-				<div class="hoa-description">
-					<b>Nicholas Edward LaFon</b><br>
-					27 year old man who roleplays as a 17 year old asian kid named "Brett" to sleepcall with underage egirls.<br> 
-					Hypocritically exposing Mourn for being a pedophile, while being one himself.<br>
-					Got ran by ViLE and still tries denying his dox, even though there is countless proof of it being correct.<br><br>
-					<a href="/upload/Underpants22">Dox</a> | <a href="https://www.youtube.com/watch?v=PTdVdgK-7Hk">Video Evidence</a>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://files.catbox.moe/a8jro6.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					Rax / Almighty
-				</div>
-				<div class="hoa-description">
-					<b>Adam Coalfield Benson</b><br>
-From scooter tail whips, to false claiming binary exploitation and impersonating 90% of the community; feel lucky if you have not been impersonated by him yet.<br>
-Spends his days being fully naked on Discord for everyone (even though nobody wants it) and tries to scam people out of thousands to gamble it away on roobet.<br>
-Cried when AT&T live chat got patched so he couldn't do anymore ledgers and is just an overall meme in the community.<br>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://files.catbox.moe/7n3z3c.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					Smhabib2 / Darkwizard662
-				</div>
-				<div class="hoa-description">
-					<b>Sheikh Muhammad Habib</b><br>
-Claims to be "the <u>best</u> hacker in the world", who "hacked big companies" by making a PSN Account Checker.<br>
-Spends his days swallowing over-priced xanax, claims benching 250kg, and storing his users combolists & databases from his PSN checker.<br>
-Cried about his dox getting dropped & faked a video with his "lawyer".<br>
-His eyes bleed of insecurities and antisocialness.<br>
-<a href="https://doxbin.org/upload/Darkwizard662Smhabib2v2" target="_blank">View Dox</a>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/babloo/babloo.png">
-				</div>
-				<div class="hoa-name rainbow">
-					Desmond
-				</div>
-				<div class="hoa-description">
-					<b>Desmond Babloo Singh</b><br>
-					Used Doxbin for over a year as a tool to harass with the intent to harm his fantasy dreamgirl.<br>
-					Also harassed Doxbin admins personally for months after getting owned by MKV (<a href="https://doxbin.org/upload/desmondsingh"target="_blank">Dox</a>)<br>
-					Arrested 4 days before Christmas - (<a href="https://www.justice.gov/usao-md/pr/new-york-man-arrested-federal-charges-maryland-cyberstalking-attempted-murder-hire-and" target="_blank">DOJ #1</a> | <a href="https://www.justice.gov/usao-md/pr/new-york-man-facing-federal-indictment-maryland-cyberstalking-and-aggravated-identity">DOJ #2</a> | <a href="/files/hoa/babloo/USA_vs_%20BABLOO_SINGH_Complaint_Affidavit.pdf">Affidavit</a>)<br>
-					Will enjoy getting ass-raped by very large tattoo'd bald men.
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="/files/hoa/aaron/tda.jpg">
-				</div>
-				<div class="hoa-name  rainbow">
-					ThatDevAaron / Shprqness
-				</div>
-				<div class="hoa-description">
-					<b>Aaron Akhtar</b><br>
-					From Minecraft "hacker" prodigy, to owning a shit DDoS-for-hire service (Stressing.ninja | <a href="https://doxbin.org/upload/StressingninjaDatabase">DB Leak</a> | <a href="https://doxbin.org/upload/ThatDevAaronShprqness">Dox</a>) that is incapable of downing even the weakest home connection.<br>
-					Well known for selling his own database for weed and McDonalds to fuel his autistic ventures with the most recent one, trying and subsequently failing to find Doxbin's backend, while flexing an old proxy IP on RaidForums.com.<br>
-				</div>
-			</div>
+<script>
+  if (!/\b(BlackBerry|webOS|iPhone|IEMobile|Android|Windows Phone|iPad|iPod)\b/i.test(navigator.userAgent)) {
+    document.write(
+      
+      '<div class="background"><video id="bg-video" playsinline autoplay muted loop><source src=""></video></div>'
+    
+    );
+    addEventListener("load", () => {
+      let vid = document.getElementById("bg-video");
+      
+      setInterval(() => {
+        if (vid.currentTime + 5 > vid.duration) {
+          vid.currentTime = 0.1;
+        }
+      }, 500);
+    });
+  }
+  if (!/\b(BlackBerry|webOS|iPhone|IEMobile|Android|Windows Phone|iPad|iPod)\b/i.test(navigator.userAgent)) {
+      document.write("<canvas></canvas>");
+      let d = document.getElementsByTagName("canvas")[0];
+      let f = d.getContext("2d");
+      d.width = innerWidth;
+      d.height = innerHeight;
+      addEventListener("resize", () => {
+        d.width = innerWidth;d.height = innerHeight
+      });
+      let e = [];
+      (function g(a) {
+        let b = performance.now();
+        let c = (b - a) * 0.008;
+        f.clearRect(0, 0, d.width, d.height);
+        while (e.length < 100) {
+          e.push({
+            a: 1 + Math.floor(Math.random() * 1),
+            b: Math.floor(Math.random() * d.width * 3) - d.width,
+            c: -(10 + Math.floor(Math.random() * d.height)),
+            d: 1 + Math.random() * 10,
+            e: 10 + Math.random() * 5
+          })
+        }
+        e.forEach(a => {
+          a.b += a.d * c;a.c += a.e * c
+        });
+        e = e.filter(a => a.c < d.height + a.a * 2);
+        e.forEach(a => {
+          f.fillStyle = "white";f.beginPath();f.arc(a.b, a.c, a.a, 0, 6.283185307179586, 1);f.fill()
+        });
+        requestAnimationFrame(() => {
+          g(b)
+        })
+      })(performance.now())
+    }
+</script>
+  <main>
+    <section class="nav dark">
+      <script>
+        {
+          let nav = document.currentScript.parentElement;
+    
+          document.addEventListener("scroll", () => {
+            if (scrollY > 0) {
+              nav.classList.add("scrolled");
+            }
+            else {
+              nav.classList.remove("scrolled");
+            }
+          });
+        }
+      </script>
+      <a href="https://priority.lol/"><span>P</span>riority.<span></span><span>lol</span></a>
+      <ul class="nav-links">
+        <li><a class="nav-button dropdown"><img class="filter-ddd" src="crates.svg"><span>Products</span></a>
+          <ul>
+              <li><a class="nav-button" href="ark.html">China Ware Windows 10</a></li>
+              <li><a class="nav-button" href="r6.html">Rainbow Six Siege Wallhacks</a></li>
+          </ul>
+        </li>
+	 <li><a class="nav-button" href="tos.html"><img class="filter-ddd" src="tos.svg"><span>TOS</span></a></li>
+	 <li><a class="nav-button" href="status.html"><img class="filter-ddd" src="status.svg"><span>Status</span></a></li>
+        <li><a class="nav-button" href="https://discord.gg/hmrHfmduPP"><img class="filter-ddd" src="discord.svg"><span>Discord</span></a></li>
+      </ul>
+    </section>
+    <section class="intro-1">
+<div class="images">
+            <div class="image-box" data-name="the hero">
+                <img src="pacho.png" alt="">
+                <h6>The Hero</h6>
+            </div>
 
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://files.catbox.moe/ur5pwt.jpg">
-				</div>
-				<div class="hoa-name  rainbow">
-					Feek
-				</div>
-				<div class="hoa-description">
-					<b>Landon David Johnson</b><br>
-					Got a huge ego after becoming a T-Mobile Call Slave.<br>
-					Enjoys extorting minors for nudes<br>
-					While being an extreme narcissist and having a god complex, upon confrontation he left in less than a second.<br>
-					Calls people broke while being poor.<br>
-					Huge simp.
-				</div>
-			</div>
-
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://files.catbox.moe/cf5ts6.jpg">
-				</div>
-				<div class="hoa-name  rainbow">
-					Swiper
-				</div>
-				<div class="hoa-description">
-					<b>Jalen Gilliam</b><br>
-					From professional Minecraft player to professional "roaster".<br>
-					Enjoys sleeping in Discord calls with underaged females from ages 13 - 17.<br>
-					Claims to have dissociative identity disorder (DID).<br>
-					Another common persona, 'hooper' or 'jalen'.
-				</div>
-			</div>
-
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/graham/gclark.png">
-				</div>
-				<div class="hoa-name rainbow">
-					Kirk
-				</div>
-				<div class="hoa-description">
-					<b>Graham Ivan Clark</b><br>
-					Aka, OpenHCF the Minecraft scammer.<br>
-					"Mastermind" over July 15th Twitter hack.<br>
-					SE'd a Twitter employee to become widely known super scary <u><i>hacker</i></u>.<br>
-					Only got 100k in btc, hard wallet is most likely seized for evidence.<br>
-					Bad OPSEC<br><br>
-					<a href="/files/hoa/graham/twt_arrest_report.pdf">Arrest Report</a> | <a href="/files/hoa/kirk/kirk_court_video_2021_march16.mp4">2021 Court Sentencing</a>
-				</div>
-			</div>
-
-
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://doxbin.org/files/hoa/kuba/kuba.jpg">
-				</div>
-				<div class="hoa-name rainbow">
-					Kuba
-				</div>
-				<div class="hoa-description">
-					<b>Jakub Sebastian Matejko</b><br>
-					Scammed known refunder @Penis  for £80.<br>
-					Reported Doxbin servers to CF and took it down for 2 hours.<br>
-					Now spends his days sucking on his moms tits and using Google report forms attempting to takedown Doxbin.
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://files.catbox.moe/stikq5.png">
-				</div>
-				<div class="hoa-name rainbow">
-					HDGZero / Xavier Farbel
-				</div>
-				<div class="hoa-description">
-					<b>Timothy Dalton Vaughn (21)</b><br>
-					Member of the autismo squad 'ApophisSquad'.<br>
-					Would pretend to be a female to trick lil hacker boys.<br>
-					Would manipulate 13/14 yr old girls and sell CP.<br>
-					Used the same 2 password's everywhere.<br>
-					<a href="/files/hoa/zero/Apophis-Squad-INDICTMENT-2.pdf" target="_blank">Indictment - 2019</a>
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://files.catbox.moe/uol0cw.png">
-				</div>
-				<div class="hoa-name rainbow">
-					PotError
-				</div>
-				<div class="hoa-description">
-					<b>Liam Michael Kellgren Yousri</b><br>
-					The original meme of Doxbin.<br>
-					The most mentioned, most bullied and most annoying person to ever live.<br>
-					Total of 180 deleted spam pastes including his information.
-				</div>
-			</div>
-			<div class="hoa-container">
-				<div class="hoa-image">
-					<img src="https://files.catbox.moe/g5pnk5.png">
-				</div>
-				<div class="hoa-name rainbow">BotGod aka Carl</div>
-				<div class="hoa-description">
-					<b>John William Kirby Kelley</b><br>
-					Member of 'DeadNet' & .onion 'Doxbin'.<br>
-					Arrested for swatting w/ Google voice, claims to be apart of 'Atomwaffen' and looks like an overdeveloped white monkey.<br>
-					<a href="/files/hoa/gov.uscourts.vaed.464952.2.0.pdf" target="_blank">Case Summary - 2020</a>
-				</div>
-			</div>
-		</div>
-    </div>
+    </section>
+  </main>
+  <section class="footer">
+    <p>© 2022 Priority.lol All rights reserved. All other trademarks, logos and copyrights are the property of their respective owners. <a class="underlineable" href="tos.html">Terms and Conditions</a>.</p>
+  </section>
 </body>
+
 </html>
-<!-- created by brenton // t.me/brenton / brenton@doxbin.com / @Brenton_xxx  -->
