@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
@@ -23,7 +25,62 @@
     });
   </script>
 </head>
-<style>
+
+<body style="background: #000 !important;">
+<script>
+  if (!/\b(BlackBerry|webOS|iPhone|IEMobile|Android|Windows Phone|iPad|iPod)\b/i.test(navigator.userAgent)) {
+    document.write(
+      
+      '<div class="background"><video id="bg-video" playsinline autoplay muted loop><source src=""></video></div>'
+    
+    );
+    addEventListener("load", () => {
+      let vid = document.getElementById("bg-video");
+      
+      setInterval(() => {
+        if (vid.currentTime + 5 > vid.duration) {
+          vid.currentTime = 0.1;
+        }
+      }, 500);
+    });
+  }
+  if (!/\b(BlackBerry|webOS|iPhone|IEMobile|Android|Windows Phone|iPad|iPod)\b/i.test(navigator.userAgent)) {
+      document.write("<canvas></canvas>");
+      let d = document.getElementsByTagName("canvas")[0];
+      let f = d.getContext("2d");
+      d.width = innerWidth;
+      d.height = innerHeight;
+      addEventListener("resize", () => {
+        d.width = innerWidth;d.height = innerHeight
+      });
+      let e = [];
+      (function g(a) {
+        let b = performance.now();
+        let c = (b - a) * 0.008;
+        f.clearRect(0, 0, d.width, d.height);
+        while (e.length < 100) {
+          e.push({
+            a: 1 + Math.floor(Math.random() * 1),
+            b: Math.floor(Math.random() * d.width * 3) - d.width,
+            c: -(10 + Math.floor(Math.random() * d.height)),
+            d: 1 + Math.random() * 10,
+            e: 10 + Math.random() * 5
+          })
+        }
+        e.forEach(a => {
+          a.b += a.d * c;a.c += a.e * c
+        });
+        e = e.filter(a => a.c < d.height + a.a * 2);
+        e.forEach(a => {
+          f.fillStyle = "white";f.beginPath();f.arc(a.b, a.c, a.a, 0, 6.283185307179586, 1);f.fill()
+        });
+        requestAnimationFrame(() => {
+          g(b)
+        })
+      })(performance.now())
+    }
+</script>
+	<style>
     :root {
     --color-background:#000000;
     --axis-x: 1px;
@@ -145,8 +202,23 @@ body {
 }
 
 </style>
-	
-<a href="https://priority.lol/"><span>P</span>riority.<span></span><span>lol</span></a>
+  <main>
+    <section class="nav dark">
+      <script>
+        {
+          let nav = document.currentScript.parentElement;
+    
+          document.addEventListener("scroll", () => {
+            if (scrollY > 0) {
+              nav.classList.add("scrolled");
+            }
+            else {
+              nav.classList.remove("scrolled");
+            }
+          });
+        }
+      </script>
+      <a href="https://priority.lol/"><span>P</span>riority.<span></span><span>lol</span></a>
       <ul class="nav-links">
         <li><a class="nav-button dropdown"><img class="filter-ddd" src="crates.svg"><span>Products</span></a>
           <ul>
@@ -159,7 +231,10 @@ body {
         <li><a class="nav-button" href="https://discord.gg/hmrHfmduPP"><img class="filter-ddd" src="discord.svg"><span>Discord</span></a></li>
       </ul>
     </section>
-
+    <section class="intro-1">
+      <p> ARK ch_</p>
+      <span class="intro-wow-left"><img class="filter-ddd" src="crosshair.svg"><br><span>Ark</span></span>
+      <span class="intro-wow-right"><span>Paid Client</span><br><img class="filter-ddd" src="tools.svg"></span>
 <body>
     <ul class="c-rainbow">
         <li class="c-rainbow__layer c-rainbow__layer--white">Crush</li>
@@ -171,4 +246,11 @@ body {
         <li class="c-rainbow__layer c-rainbow__layer--yellow">Crush</li>
     </ul>
 </body>
+    </section>
+  </main>
+  <section class="footer">
+    <p>© 2022 Priority.lol All rights reserved. All other trademarks, logos and copyrights are the property of their respective owners. <a class="underlineable" href="tos.html">Terms and Conditions</a>.</p>
+  </section>
+</body>
+
 </html>
